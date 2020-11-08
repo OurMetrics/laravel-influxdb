@@ -51,7 +51,9 @@ class ServiceProvider extends LaravelServiceProvider
                     config('influxdb.udp.port')
                 ));
             }
-            return $client->selectDB(config('influxdb.dbname'));
+            
+            return $client;
+//            return $client->selectDB(config('influxdb.dbname'));
         });
     }
 
