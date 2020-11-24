@@ -15,9 +15,15 @@
         }
     },
     "require": {
-        "influxdb/influxdb-php": "^1.15",
+        "ourmetrics/influxdb-php": "dev-master",
         "illuminate/support": "^5.0|^6.0|^7.0|^8.0"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/OurMetrics/influxdb-php.git"
+        }
+    ],
     "minimum-stability": "dev",
     "extra": {
         "laravel": {
